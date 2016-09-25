@@ -12,6 +12,7 @@ const ctx = canvas.getContext("2d");
 let options = {};
 
 genButton.addEventListener('click', (e) => {
+
   // set up options object
   options.seedString = seedInput.value || "a";
   options.ruleNum = ruleInput.value || "90";
