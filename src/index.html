@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Automata Stuff</title>
+  </head>
+  <body>
+
+    <div>
+      <div>
+        <label for="seed">Seed</label>
+        <input name="seed" id="seed" type="text" value="type something here">
+      </div>
+
+      <div>
+        <label for="ruleNum">Wolfram Rule Number</label>
+        <input name="ruleNum" id="ruleNum" type="number" value="90">
+      </div>
+
+      <div>
+        <label for="cellSize">Cell size (in pixels)</label>
+        <input id="cellSize" name="cellSize" type="number" value="2">
+      </div>
+
+      <div>
+        <label for="canvasSize">Canvas Size (in pixels)</label>
+        <input id="canvasSize" name="canvasSize" type="number" value="500">
+      </div>
+
+      <div>
+        <button id="generate">Generate</button>
+      </div>
+    </div>
+
+    <canvas id="canvas" height="500" width="500"></canvas>
+
+    <script src="/assets/bundle.min.js"></script>
+  </body>
+</html>

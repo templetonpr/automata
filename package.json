@@ -1,0 +1,34 @@
+{
+  "name": "automata",
+  "version": "1.0.0",
+  "description": "Messing around with cellular automata stuff because why not",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "rm -rf dist && mkdir dist/ && webpack && cp src/index.html dist/index.html",
+    "build:prod": "export NODE_ENV='production' && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/templetonpr/automata.git"
+  },
+  "keywords": [
+    "cellular",
+    "automata"
+  ],
+  "author": "templetonpr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/templetonpr/automata/issues"
+  },
+  "homepage": "https://github.com/templetonpr/automata#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.13.0"
+  }
+}
